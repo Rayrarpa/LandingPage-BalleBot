@@ -20,6 +20,7 @@ body {
     font-family: "Righteous", cursive;
 }
 
+/* HEADER */
 .cabecalho {
     display: flex;
     flex-direction: row;
@@ -30,6 +31,12 @@ body {
 
 .foto-logo {
     height: 72px;
+    transition: all .6s ease-in-out;
+}
+
+.foto-logo:hover {
+    transform: rotate(360deg);;
+    /* translate: ; */
 }
 
 .navigation {
@@ -41,8 +48,27 @@ body {
     color: #FFF2E7;
     font-weight: 400;
     font-size: 18px;
+    position: relative;
 }
 
+.navigation-item::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    top: 30px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF2E7;
+    transition: all .3s ease-in-out;
+}
+
+.navigation-item:hover::before {
+    width: 100%;
+}
+
+/* MAIN */
+/* SECTION 1 */
 .pagina-principal {
     margin-bottom: 48px;
     border-top: 0.4px solid #FFF2E7;
@@ -75,6 +101,7 @@ body {
 
 .ballebot-button {
     background-color: #ECD6C4;
+    position: relative;
     width: 180px;
     height: 60px;
     border: none;
@@ -89,10 +116,35 @@ body {
     background-color: #fcf3ec;
 }
 
-.foto-ballebot {
+.ballebot-button::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 15px;
+    left: 25px;
+    background-color: #2F2325;
+    transition: all .3s ease-in-out;
+}
+
+.ballebot-button:hover::before {
+    width: 73%;
+}
+
+.caixa-foto-ballebot {
     height: 430px;
 }
 
+.foto-ballebot {
+    height: 430px;
+    transition: all .5s ease-in-out;
+}
+
+.caixa-foto-ballebot:hover .foto-ballebot {
+    transform: rotateY(360deg);
+}
+
+/* SECTION 2 */
 .sobre-ballebot {
     display: flex;
     flex-direction: column;
@@ -116,15 +168,22 @@ body {
     color: #ECD6C4;
 }
 
+/* RODAPE */
 .rodape {
     border-top: 0.4px solid #FFF2E7;
     padding: 32px;
 }
 
 .foto-ballerini {
+    position: relative;
     height: 48px;
     display: block;
     margin: 0 auto;
+    transition: all .3s ease-in-out;
+}
+
+.foto-ballerini:hover {
+    top: -10px;
 }
 
 ::selection {
