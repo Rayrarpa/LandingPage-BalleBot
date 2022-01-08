@@ -5,23 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Um site criado durante um video da Rafaella Ballerini">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
 </head>
 <body>
+
+    <div id="menu-mobile" class="menu-mobile">
+        <ul class="menu-mobile-navigation">
+            <li class="menu-mobile-itens">
+                <a href="https://github.com/wagxzStdcR" target="_blank">
+                    Comunidade Ballerini
+                </a>
+            </li>
+            <li class="menu-mobile-itens">
+                <a href="https://github.com/Rayrarpa" target="_blank">
+                    Github
+                </a>
+            </li>
+            <li class="menu-mobile-itens">
+                <a href="https://github.com/Rayrarpa/DehydratedWater-Bot" target="_blank">
+                    Código
+                </a>
+            </li>
+            <li class="menu-mobile-itens">
+                <a href="" target="_blank">Comandos</a>
+            </li>
+        </ul>
+    </div>
+    
     <div id="back-loader" class="none back-loader">
         <div class="none loader"></div>
     </div>
+
     <!-- HEADER -->
     <header class="cabecalho">
         <img class="foto-logo" src="./imgs/DW-logo.jpg" alt="Foto de uma Agua Desidratada">
-
-        <!-- MENU -->
+        
+        <!-- MENUS -->
+        <!-- MENU DESKTOP -->
         <nav class="navigation">
             <a class="navigation-item sarala" href="https://discord.gg/wagxzStdcR" target="_blank">Comunidade Ballerini</a>
             <a class="navigation-item sarala" href="https://github.com/Rayrarpa/" target="_blank">Github</a>
             <a class="navigation-item sarala" href="https://github.com/Rayrarpa/DehydratedWater-Bot" target="_blank">Código</a>
             <a class="navigation-item sarala" href="#">Comandos</a>
         </nav>
+
+        <!-- MENU MOBILE -->
+        <div class="menu-mobile-toggle">
+            <input type="checkbox" id="checkbox-menu">
+    
+            <label for="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
     </header>
 
     <main class="pagina-principal">

@@ -1,0 +1,120 @@
+@media (max-width: 768px) {
+    body {
+        background: linear-gradient(68.15deg, #2800da 25.62%, #06004d 100.61%);
+    }
+
+    .caixa-foto-DW {
+        display: none;
+    }
+    
+    .pagina-principal {
+        text-align: center;
+    }
+    
+    .DW-button {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    
+    .foto-logo {
+        display: none;
+    }
+    .pagina-principal {
+        text-align: center;
+        border-top: 0; 
+    }
+
+    .conteudo-principal {
+        padding: 2px;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .menu-mobile {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #3920a7;
+        z-index: 1;
+    }
+
+    .menu-mobile-navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-size: 40px;
+        text-decoration: none;
+        height: 100vh;
+    }
+    
+    .menu-mobile-itens {
+        list-style: none;
+    }
+    
+    .menu-mobile-itens a {
+        color: black;
+    }
+
+    .menu-mobile-toggle {
+        display: block;
+        position: absolute;
+        right: 30px;
+        z-index: 2;
+    }
+
+    #checkbox-menu {
+        position: absolute;
+        opacity: 0;
+    }
+
+    .menu-mobile-toggle label {
+        position: relative;
+        display: block;
+        height: 22px;
+        width: 30px;
+    }
+
+    .menu-mobile-toggle label span {
+        position: absolute;
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 30px;
+        background-color: #7864d3;
+        transition: 0.28s ease-in-out;
+    }
+
+    .menu-mobile-toggle label span:nth-child(1) {
+        top: 0;
+    }
+
+    .menu-mobile-toggle label span:nth-child(2) {
+        top: 8px;
+    }
+
+    .menu-mobile-toggle label span:nth-child(3) {
+        top: 16px;
+    }
+    
+    #checkbox-menu:checked + label span:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 8px;
+    }
+
+    #checkbox-menu:checked + label span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #checkbox-menu:checked + label span:nth-child(3) {
+        transform: rotate(45deg);
+        top: 8px;
+    }
+}
