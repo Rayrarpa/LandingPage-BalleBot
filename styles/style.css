@@ -71,6 +71,7 @@
 
 .menu-mobile {
     display: none;
+    top: -700px;
 }
 
 .menu-mobile-toggle {
