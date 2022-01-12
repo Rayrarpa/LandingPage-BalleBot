@@ -4,12 +4,12 @@ const menuMobile = document.getElementById("menu-mobile");
 setTimeout(() => {
     document.getElementsByClassName("none")[0].style = "opacity: 0;"
     document.getElementsByClassName("none")[1].style = "opacity: 0;"
-}, 1000)
+}, 5000)
 
 setTimeout(() => {
     document.getElementsByClassName("none")[0].style = "display: none;"
     document.getElementsByClassName("none")[1].style = "display: none;"
-}, 1500)
+}, 5500)
 
 checkbox.addEventListener("click", () => {
     
